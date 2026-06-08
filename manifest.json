@@ -2,7 +2,7 @@
   "name": "Kolase Herbal",
   "short_name": "Kolase Herbal",
   "description": "Info Kesehatan & Herbal Alami untuk keluarga Indonesia",
-  "start_url": "https://kolaseherbal.blogspot.com/",
+  "start_url": "https://kolaseherbal.blogspot.com/?utm_source=pwa",
   "scope": "https://kolaseherbal.blogspot.com/",
   "display": "standalone",
   "background_color": "#2d7a4f",
@@ -10,15 +10,16 @@
   "orientation": "portrait-primary",
   "lang": "id-ID",
   "categories": ["health", "lifestyle"],
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "https://blogger.googleusercontent.com/img/a/AVvXsEgg06K-hOFHVDQogFrsELEVSgjxmBsK7FAyH8nJ1kHXXfdm30ZJxQA-xXBP8k4bpd1ManWYME6Ah1mqNlsQFslvKiPNCaoKhHatQmcDd5t2FAkUkKtgjE5ICDz6vUpIKlrTOx0hlTzlThXrVX1IVOcU8puy8OQ8VgNgunICM9o4G0iWF83yRssTLWb0QTU=s192",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://blogger.googleusercontent.com/img/a/AVvXsEgg06K-hOFHVDQogFrsELEVSgjxmBsK7FAyH8nJ1kHXXfdm30ZJxQA-xXBP8k4bpd1ManWYME6Ah1mqNlsQFslvKiPNCaoKhHatQmcDd5t2FAkUkKtgjE5ICDz6vUpIKlrTOx0hlTzlThXrVX1IVOcU8puy8OQ8VgNgunICM9o4G0iWF83yRssTLWb0QTU=s512",
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -28,9 +29,8 @@
     {
       "name": "Artikel Terbaru",
       "short_name": "Terbaru",
-      "description": "Lihat artikel herbal terbaru",
-      "url": "https://kolaseherbal.blogspot.com/",
-      "icons": [{ "src": "https://blogger.googleusercontent.com/img/a/AVvXsEgg06K-hOFHVDQogFrsELEVSgjxmBsK7FAyH8nJ1kHXXfdm30ZJxQA-xXBP8k4bpd1ManWYME6Ah1mqNlsQFslvKiPNCaoKhHatQmcDd5t2FAkUkKtgjE5ICDz6vUpIKlrTOx0hlTzlThXrVX1IVOcU8puy8OQ8VgNgunICM9o4G0iWF83yRssTLWb0QTU=s96", "sizes": "96x96" }]
+      "url": "https://kolaseherbal.blogspot.com/?utm_source=pwa-shortcut",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

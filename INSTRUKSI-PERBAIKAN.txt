@@ -1,0 +1,62 @@
+========================================================
+PERUBAHAN DI TEMA BLOGGER (Edit HTML)
+========================================================
+
+CARI baris ini (sudah ada di tema kamu, sekitar baris 14):
+
+  <link crossorigin='use-credentials' href='https://kolaseherbal-coder.github.io/kolase-herbal-pwa/manifest.json' rel='manifest'/>
+
+GANTI dengan (hapus crossorigin='use-credentials', ganti jadi crossorigin='anonymous'):
+
+  <link crossorigin='anonymous' href='https://kolaseherbal-coder.github.io/kolase-herbal-pwa/manifest.json' rel='manifest'/>
+
+Hanya 1 kata yang berubah: 'use-credentials' → 'anonymous'
+
+Kode Service Worker di bawah (baris 2103-2131) TIDAK PERLU diubah, sudah benar.
+
+========================================================
+FILE YANG PERLU DI-UPLOAD KE GITHUB (replace semua)
+========================================================
+
+Upload/replace 4 file ini ke repository kolase-herbal-pwa:
+
+1. manifest.json  (versi baru - pakai icon-192.png lokal)
+2. sw.js          (versi baru - lebih kompatibel)
+3. icon-192.png   (ikon baru - PNG asli)
+4. icon-512.png   (ikon besar - PNG asli)
+5. _headers       (FILE BARU - wajib untuk CORS GitHub Pages)
+
+Cara upload di GitHub:
+- Buka repository kolase-herbal-pwa
+- Klik "Add file" → "Upload files"
+- Drag semua 5 file sekaligus
+- Klik "Commit changes"
+
+========================================================
+CATATAN PENTING - _headers file
+========================================================
+
+File "_headers" (dengan underscore di depan, tanpa ekstensi)
+adalah file konfigurasi khusus GitHub Pages yang mengatur
+header HTTP termasuk CORS. Ini WAJIB agar manifest.json
+bisa dibaca browser dari domain blogspot.com.
+
+Pastikan nama filenya persis: _headers (bukan headers.txt dll)
+
+========================================================
+SETELAH UPLOAD - CARA CEK
+========================================================
+
+1. Tunggu 2-3 menit setelah upload
+2. Buka Chrome di HP Android
+3. Buka https://kolaseherbal.blogspot.com
+4. Tunggu 30 detik - banner "Tambahkan ke layar utama" 
+   akan muncul di bagian bawah layar
+5. Atau tap menu ⋮ → "Tambahkan ke layar utama"
+
+Untuk verifikasi via DevTools (PC):
+- Buka blog di Chrome
+- F12 → Application → Manifest
+- Pastikan tidak ada error merah
+- F12 → Application → Service Workers
+- Pastikan status "activated and is running"
